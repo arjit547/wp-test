@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /wp-admin
+  - source: /
     destination: /var/www/html/wp-admin
     overwrite: true
     permissions:
