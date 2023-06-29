@@ -9,7 +9,7 @@ files:
         pattern: "**"
 hooks:
   BeforeInstall:
-    - location: upload.sh
+    - location: upnote.sh
       runas: root
   AfterInstall:
     - location: run.sh
