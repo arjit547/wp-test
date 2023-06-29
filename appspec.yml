@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /wp-admin
+    destination: /var/www/html/wp-admin
+    overwrite: true
+    permissions:
+      - object: wp-admin/
+        pattern: "**"
+hooks:
+  BeforeInstall:
+    - location: upload.sh
+      runas: root
+  AfterInstall:
+    - location: run.sh
+      runas: root
