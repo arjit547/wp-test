@@ -1,1 +1,1 @@
-sudo systemctl restart httpd
+sudo service codedeploy-agent restart
